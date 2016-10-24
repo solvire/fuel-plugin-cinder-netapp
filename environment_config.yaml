@@ -266,6 +266,15 @@ attributes:
     restrictions:
       - condition: "settings:cinder_netapp.netapp_storage_protocol.value != 'iscsi'"
         action: "hide"
+  igroup_target_filters:
+    value: ''
+    label: 'Initiator Group Target Filter'
+    description: '(Optional) This option will filter the NetApp igroup targets that are returned during the discovery phase. The value will be a list of IP addresses in comma delimited format with no spacing.'
+    weight: 61
+    type: 'text'
+    restrictions:
+      - condition: "settings:cinder_netapp.netapp_storage_protocol.value != 'iscsi'"
+        action: "hide"
   use_multipath_for_image_xfer:
     value: true
     label: 'Multipath for Image Transfer'

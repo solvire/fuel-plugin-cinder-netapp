@@ -78,6 +78,7 @@ class plugin_cinder_netapp::backend::netapp (
     "$netapp_backend_name/use_multipath_for_image_xfer":    value => $cinder_netapp['use_multipath_for_image_xfer'];
     "$netapp_backend_name/netapp_enable_multiattach":       value => $cinder_netapp['netapp_enable_multiattach'];
     "$netapp_backend_name/netapp_pool_name_search_pattern": value => $cinder_netapp['netapp_pool_name_search_pattern'];
+    "$netapp_backend_name/igroup_target_filters":           value => $cinder_netapp['igroup_target_filters'];
     "$netapp_backend_name/reserved_percentage":             value => $cinder_netapp['reserved_percentage'];
     "$netapp_backend_name/max_oversubscription_ratio":      value => $cinder_netapp['max_oversubscription_ratio'];
     "$netapp_backend_name/nfs_mount_options":               value => $cinder_netapp['nfs_mount_options'];
